@@ -1,0 +1,33 @@
+// Task 2 --> Simple Calculator using Switch Case
+
+#include<iostream> 
+using namespace std;
+
+int main()
+{
+    int a,b;
+    char oper; 
+
+    cout << "Enter numbers : ";
+    cin >> a >> b;
+    cout << "Enter Operator (+,-,*,/) : ";
+    cin >> oper;
+
+    switch(oper) 
+    {
+        case '+' : cout << " Sum of two numbers " << a+b <<endl;
+        break;
+
+        case '-' : cout << " Difference of two numbers " << a-b <<endl;
+        break;
+
+        case '*' : cout << "Multiplication of two numbers " << a*b <<endl;
+        break;
+
+        case '/' : cout << "Division of two numbers " << a/b <<endl;
+        break;
+
+        default : cout << "Invalid operation !";
+        break;
+    }
+}
